@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busiest Routes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .button-container {
+            margin-bottom: 5px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
+            padding: 5px;
+        }
+        .plot {
+            border: 0px solid #ccc;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Recommendation</h1>
+    <div class="button-container">
+        <button onclick="window.location.href='busiest.html'">Busiest Routes</button>
+        <button onclick="window.location.href='total_profit.html'">Total Profit</button>
+        <button onclick="window.location.href='profit_margin.html'">Profit Margin</button>
+        <button onclick="window.location.href='profit_per_trip.html'">Profit per Trip</button>
+        <button onclick="window.location.href='investment.html'">Strategic Investment</button>
+        <button onclick="window.location.href='kpi.html'">KPI</button>
+    </div>
+    <div class="grid-container">
+        <div class="plot"><iframe src="viz/rec_routes_scoring.html" width="100%" height="450px"></iframe></div>
+        <div class="plot"><iframe src="viz/rec_routes_map.html" width="100%" height="450px"></iframe></div>
+    </div>
+</body>
+</html>
